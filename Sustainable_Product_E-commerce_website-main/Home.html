@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenGenius:A Sustainable Shopping Platform</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+        <div id="sidebar">
+            <img src="https://as2.ftcdn.net/v2/jpg/10/46/31/95/1000_F_1046319549_U8EFNuyoqZev2Tn0T0sX90jZdElqWKg7.jpg" alt="Logo">
+            <a href="#" class="active" onclick="navigate('Home.html', this)">Home</a>
+            <a href="#" onclick="navigate('about.html', this)">About Us</a>
+            <a href="#" onclick="navigate('products.html', this)">Products</a>
+        </div>
+
+        <div id="content">
+            <div id="black-bar">
+                <div id="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-button" onclick="performSearch()">Search</button>
+                </div>
+                <button id="signup-button" onclick="redirectSignup()">Sign Up</button>
+            </div>
+            <div id="tagline-bar1">
+                <img src="https://plus.unsplash.com/premium_photo-1661666980358-66c370b29c28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE3fHxzdXN0YWluYWJsZSUyMHByb2R1Y3RzfGVufDB8fDB8fHww" alt="Image 1">
+                <h1>"Shop the Change, <br>Embrace the Eco-Future."</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="tagline-bar2">
+                <h1>"Elevate Your Style,<br>Elevate the Planet."</h1>
+                <img src="https://images.unsplash.com/photo-1567480503709-66518a660785?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3VzdGFpbmFibGUlMjBmYXNoaW9ufGVufDB8fDB8fHww" alt="Image 2">
+            </div>
+        
+            <div id="circle-image">
+                <img src="https://images.unsplash.com/photo-1631050165089-6311e0d6c5f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3VzdGFpbmFibGUlMjBmYXNoaW9ufGVufDB8fDB8fHww" alt="Circle Image">
+                <h1>Discover, Shop, and Support a Greener Planet!</h1>
+            </div>
+        
+            <div id="buy-now">
+                <h2 id="buy-now-button">Buy Now!!!!</h2>
+            </div>
+        
+            <hr>
+        
+
+    
+
+</body>
+
+<script>
+    function navigate(page, element) {
+        window.location.href = page;
+
+        var links = document.querySelectorAll('#sidebar a');
+        links.forEach(function(link) {
+            link.classList.remove('active');
+        });
+        element.classList.add('active');
+
+    }
+    function performSearch() {
+            alert('Performing search...');
+        }
+
+        function redirectSignup() {
+        window.location.href = 'signup.html';
+    }
+
+    var buyNowButton = document.getElementById('buy-now-button');
+    buyNowButton.addEventListener('click', function() {
+        window.location.href = 'products.html';
+    });
+
+</script>
+</html>

@@ -1,0 +1,139 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(12, 51, 14);
+        }
+
+        #sidebar {
+            height: 100vh;
+            width: 200px;
+            background-color:black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        #sidebar img {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        #sidebar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        #black-bar {
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #search-bar {
+            flex: 1;
+            display: flex;
+            margin-right: 10px;
+        }
+
+        #search-input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+        }
+
+        #search-button {
+            padding: 8px;
+            background-color: beige;
+            color: brown;
+            border: none;
+            cursor: pointer;
+        }
+
+        #signup-button {
+            padding: 8px;
+            background-color: brown;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+#tagline-bar1,
+#tagline-bar2,
+#tagline-bar3
+ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5f7249;
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 40px;
+
+}
+
+#tagline-bar1 img{
+    margin-right: 100px;
+    width: 500px;
+    height: 600px;
+}
+
+#tagline-bar2 img {
+    margin-left: 100px;
+    width: 500px;
+    height: 600px;
+}
+
+#description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#circle-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#circle-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    color:#fff;
+}
+
+#circle-image h1 {
+    color: #fbfbfb;
+    font-size: 70px;
+}
+
+#buy-now {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(199, 165, 13);
+    color: rgb(157, 222, 165);
+    border-radius: 5px;
+}
+        
+
+        hr {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+    
